@@ -16,5 +16,12 @@ public class Main {
         
         Quadrado quadrado = new Quadrado(2);
         quadrado.CalculaArea();
+        
+        Triangulo triangulo = new Triangulo(3,5);
+        triangulo.CalculaArea();
+        
+        Circulo circulo = new Circulo(3);
+        circulo.CalculaArea();
     }
+    
 }
