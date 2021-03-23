@@ -9,11 +9,33 @@ package Questao4;
  *
  * @author Guilherme
  */
-public class Quadrado extends Retangulo {
+public class Quadrado extends FormaGeometrica {
+
+    private float lado;
     
+    public Quadrado(float lado){
+        this.lado = lado;
+        
+    }
+
+    public float getLado1() {
+        return lado;
+    }
+
+    public void setLado1(float lado) {
+        this.lado = lado;
+    }
+
+    public float getLado2() {
+        return lado;
+    }
+
+    public void setLado2(float lado) {
+        this.lado = lado;
+    }
     
-    public Quadrado(float lado1){
-        setLado1(lado1);
-        setLado2(lado1);
+    public void CalculaArea(){
+        super.setarea(lado * lado);
+        System.out.println(super.getarea());
     }
 }
